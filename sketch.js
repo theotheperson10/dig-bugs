@@ -75,7 +75,7 @@ wall.displace(dirt)
 screen.overlap(dirt,e)
 sucker.overlap(dirt,w)
 sucker.shapeColor="yellow"
-if (el<=1){window.alert("You Won");if(eee==false){}}
+if (el<=0){window.alert("You Won");if(eee==false){}}
 }}
 function hit(dirt,player){
 if (dirt.shapeColor=="red"){window.alert("You Lost");if(eee==false){}}

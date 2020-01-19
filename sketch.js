@@ -12,7 +12,7 @@ var play=false
 function setup(){
 wall=createGroup();
 wall.visible=true;
-frameRate(120)
+frameRate(30)
 screen=createSprite(275,125,550,190)
 screen.shapeColor="green"
 createCanvas(200,180)

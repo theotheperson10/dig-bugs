@@ -101,5 +101,5 @@ if (dirt.y>180){dirt.destroy;el--;}
 if(random(1,10)>4){dirt.velocityX=-1}else{dirt.velocityX=1}}
 }
 function n(wall,dirt){
-dirt.shapeColor=="red"){if (dirt.x<48){el--;dirt.destroy();}dirt.x>202){el--;dirt.destroy();}}
+dirt.shapeColor=="red"){if (dirt.x<48){el--;dirt.destroy();}if(dirt.x>202){el--;dirt.destroy();}}
 }

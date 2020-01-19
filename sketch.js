@@ -80,10 +80,10 @@ if (el<=0){window.alert("You Won");if(eee==false){}}
 function hit(dirt,player){
 if (dirt.shapeColor=="red"){window.alert("You Lost");if(eee==false){}}
 if (dirt.shapeColor=="brown"){
-if (keyDown("LEFT_ARROW")){dirt.destroy();}
-if (keyDown("RIGHT_ARROW")){dirt.destroy();}
-if (keyDown("DOWN_ARROW")){dirt.destroy();}
-if (keyDown("UP_ARROW")){dirt.destroy();}}
+if (keyDown("a")){dirt.destroy();}
+if (keyDown("d")){dirt.destroy();}
+if (keyDown("s")){dirt.destroy();}
+if (keyDown("w")){dirt.destroy();}}
 }}
 function w(sucker,dirt){
 if (dirt.shapeColor=="red"){dirt.destroy();el--;}

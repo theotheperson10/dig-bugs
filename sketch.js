@@ -56,7 +56,6 @@ if (sucker.width>5){
 sucker.width--;}
   fill("black")
   textSize(5)
-  textAlign(CENTER)
  text("Enemies left:"+el,50,50)
 if (sucker.height>20){sucker.height=20;}
 if (sucker.width>20){sucker.width=20;}

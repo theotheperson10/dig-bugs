@@ -45,7 +45,7 @@ background("blue");
 if (play==true){
   fill("black")
   textSize(12)
- text("Enemies left:"+el,20,20)}
+ text("Enemies left:"+el,25,20)}
 if (play==false){fill("black");textAlign(CENTER);text("Dig Bugs",100.5,20);text("Press p to play",100.5,50);if(keyDown("p")){play=true;}}else{
 drawSprites();
 if (player.y<40){player.velocityY=player.velocityY+0.2;}

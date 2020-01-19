@@ -17,12 +17,12 @@ screen=createSprite(275,125,550,190)
 screen.shapeColor="green"
 createCanvas(200,180)
 dirt=createGroup();
-player=createSprite(200,0,15,15)
+player=createSprite(100,0,15,15)
 player.shapeColor="yellow"
-swap=createSprite(-25,0,100,800)
+swap=createSprite(0,0,50,800)
 swap.shapeColor="brown"
 wall.add(swap)
-swap=createSprite(240,0,100,800)
+swap=createSprite(200,0,50,800)
 swap.shapeColor="brown"
 wall.add(swap)
 while (l3<57){
@@ -34,14 +34,16 @@ l3++;
 l4++;
 l1++;
 swap.bounce(dirt,bye)
-if (l4>7){l4=0;l2++;l1=2;}
+if (l4>6){l4=0;l2++;l1=2;}
 }swap.destroy();sucker=createSprite(0,0,5,5)}
 
 function draw(){
-wall[0].x=-25
-wall[1].x=240
 wall.displace(player)
 background("blue");
+if (play==true){
+  fill("black")
+  textSize(15)
+ text("Enemies left:"+el,20,20)}
 if (play==false){fill("black");textAlign(CENTER);text("Dig Bugs",100.5,20);text("Press p to play",100.5,50);if(keyDown("p")){play=true;}}else{
 drawSprites();
 if (player.y<40){player.velocityY=player.velocityY+0.2;}
@@ -54,9 +56,6 @@ if (sucker.height>5){
 sucker.height--;}
 if (sucker.width>5){
 sucker.width--;}
-  fill("black")
-  textSize(5)
- text("Enemies left:"+el,50,50)
 if (sucker.height>20){sucker.height=20;}
 if (sucker.width>20){sucker.width=20;}
 if (keyDown("DOWN_ARROW")){sucker.y=player.y+20;sucker.height=sucker.height+2;}

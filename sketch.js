@@ -44,7 +44,7 @@ wall.displace(player)
 background("blue");
 if (play==true){
   fill("black")
-  textSize(15)
+  textSize(12)
  text("Enemies left:"+el,20,20)}
 if (play==false){fill("black");textAlign(CENTER);text("Dig Bugs",100.5,20);text("Press p to play",100.5,50);if(keyDown("p")){play=true;}}else{
 drawSprites();

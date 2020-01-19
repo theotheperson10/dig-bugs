@@ -56,7 +56,7 @@ if (sucker.width>5){
 sucker.width--;}
   fill("black")
   textSize(5)
- text("Enemies left:"+el,0,0)
+ text("Enemies left:"+el,10,10)
 if (sucker.height>20){sucker.height=20;}
 if (sucker.width>20){sucker.width=20;}
 if (keyDown("DOWN_ARROW")){sucker.y=player.y+20;sucker.height=sucker.height+2;}

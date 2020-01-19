@@ -74,7 +74,7 @@ if (player.velocityY>1){player.velocityY=1;}
   if (time<4){dirt.visible=false}else{dirt.visible=true}
   if (time>5){time=0
 dirt.displace(dirt)
-wall.displace(dirt)
+wall.displace(dirt,n)
 screen.overlap(dirt,e)
 sucker.overlap(dirt,w)
 sucker.shapeColor="yellow"
@@ -99,4 +99,7 @@ if(dirt.shapeColor=="brown"){dirt.velocityX=0}
 if(dirt.shapeColor=="red"){
 if (dirt.y>180){dirt.destroy;el--;}
 if(random(1,10)>4){dirt.velocityX=-1}else{dirt.velocityX=1}}
+}
+function n(wall,dirt){
+dirt.shapeColor=="red"){if (dirt.x<40){el--;dirt.destroy();}dirt.x>210){el--;dirt.destroy();}}
 }

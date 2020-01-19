@@ -25,7 +25,7 @@ wall.add(swap)
 swap=createSprite(200,0,50,800)
 swap.shapeColor="brown"
 wall.add(swap)
-while (l3<20){
+while (l3<50){
 if (random(1,10)>2){swap=createSprite(l1*21,l2*21,20,20)
 swap.shapeColor="brown"}else{if (l3>7){swap=createSprite(l1*20,l2*20,10,10);                        
 swap.shapeColor="red";el++;if(random(1,10)>4){swap.velocityX=-1}else{swap.velocityX=1}}}
@@ -38,6 +38,8 @@ if (l4>6){l4=0;l2++;l1=2;}
 }swap.destroy();sucker=createSprite(0,0,5,5)}
 
 function draw(){
+ wall[0].x=0;
+ wall[1].x=200;
 wall.displace(player)
 background("blue");
 if (play==true){

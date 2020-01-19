@@ -54,7 +54,7 @@ if (sucker.height>5){
 sucker.height--;}
 if (sucker.width>5){
 sucker.width--;}
-if (player.y>250){player.y=250}
+if (player.y>200){player.y=player.y-15}
 if (sucker.height>20){sucker.height=20;}
 if (sucker.width>20){sucker.width=20;}
 if (keyDown("DOWN_ARROW")){sucker.y=player.y+20;sucker.height=sucker.height+2;}
@@ -66,7 +66,6 @@ if (keyDown("d")){player.x=player.x+10;}
 if (keyDown("s")){player.y=player.y+10;}
 if (keyDown("w")){player.y=player.y-10;}
 }
- if(player.y>200){player.y=player.y-15}
 if (player.velocityY>1){player.velocityY=1;}
   time++;
   if (time<4){dirt.visible=false}else{dirt.visible=true}

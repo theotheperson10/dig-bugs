@@ -54,6 +54,9 @@ if (sucker.height>5){
 sucker.height--;}
 if (sucker.width>5){
 sucker.width--;}
+  fill("black")
+  textSize(5)
+ text("Enemies left:"+el,0,0)
 if (sucker.height>20){sucker.height=20;}
 if (sucker.width>20){sucker.width=20;}
 if (keyDown("DOWN_ARROW")){sucker.y=player.y+20;sucker.height=sucker.height+2;}
@@ -74,9 +77,6 @@ wall.displace(dirt)
 screen.overlap(dirt,e)
 sucker.overlap(dirt,w)
 sucker.shapeColor="yellow"
- fill("black")
-  textSize(5)
- text("Enemies left:"+el,0,0)
 if (player.y>180){player.y=player.y-15}
 if (el<=0){window.alert("You Won");if(eee==false){}}
 }}

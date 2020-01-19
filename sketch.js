@@ -96,5 +96,7 @@ function bye(swap,dirt){if (dirt.shapeColor=="brown"){dirt.remove();}}
 function e(screen,dirt){
  if (dirt.y<41){dirt.y=41}
 if(dirt.shapeColor=="brown"){dirt.velocityX=0}
-if(dirt.shapeColor=="red"){if(random(1,10)>4){dirt.velocityX=-1}else{dirt.velocityX=1}}
+if(dirt.shapeColor=="red"){
+if (dirt.y>180){dirt.y=dirt.y-20}
+if(random(1,10)>4){dirt.velocityX=-1}else{dirt.velocityX=1}}
 }

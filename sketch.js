@@ -66,7 +66,7 @@ if (keyDown("d")){player.x=player.x+10;}
 if (keyDown("s")){player.y=player.y+10;}
 if (keyDown("w")){player.y=player.y-10;}
 }
- if(player.Y>200){player.y=200}
+ if(player.Y>200){player.y=player.y-15}
 if (player.velocityY>1){player.velocityY=1;}
   time++;
   if (time<4){dirt.visible=false}else{dirt.visible=true}

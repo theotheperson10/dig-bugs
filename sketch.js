@@ -28,7 +28,7 @@ wall.add(swap)
 while (l3<57){
 if (random(1,10)>2){swap=createSprite(l1*21,l2*21,20,20)
 swap.shapeColor="brown"}else{if(el<10)swap=createSprite(l1*20,l2*20,10,10);                        
-swap.shapeColor="red";el++;if(random(1,10)>4){swap.velocityX=-1}else{swap.velocityX=1}}}
+swap.shapeColor="red";el++;if(random(1,10)>4){swap.velocityX=-1}else{swap.velocityX=1}}
 dirt.add(swap)
 l3++;
 l4++;

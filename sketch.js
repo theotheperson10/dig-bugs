@@ -34,12 +34,12 @@ l3++;
 l4++;
 l1++;
 swap.bounce(dirt,bye)
-if (l4>7){l4=0;l2++;l1=2;}
+if (l4>6){l4=0;l2++;l1=2;}
 }swap.destroy();sucker=createSprite(0,0,5,5)}
 
 function draw(){
- wall[0].x=0;
- wall[1].x=200;
+wall[0].x=0;
+wall[1].x=200
 wall.displace(player)
 background("blue");
 if (play==true){

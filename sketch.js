@@ -61,10 +61,10 @@ if (keyDown("s")){sucker.y=player.y+20;sucker.height=sucker.height+2;}
 if (keyDown("w")){sucker.y=player.y-20;sucker.height=sucker.height+2;}
 if (keyDown("a")){sucker.x=player.x-20;sucker.width=sucker.width+2;}
 if (keyDown("d")){sucker.x=player.x+20;sucker.width=sucker.width+2;}
-if (keyDown("LEFT_ARROW")){player.x=player.x-6;}
-if (keyDown("RIGHT_ARROW")){player.x=player.x+6;}
-if (keyDown("DOWN_ARROW")){player.y=player.y+6;}
-if (keyDown("UP_ARROW")){player.y=player.y-6;}
+if (keyDown("LEFT_ARROW")){player.x=player.x-10;}
+if (keyDown("RIGHT_ARROW")){player.x=player.x+10;}
+if (keyDown("DOWN_ARROW")){player.y=player.y+10;}
+if (keyDown("UP_ARROW")){player.y=player.y-10;}
 }
 if (player.velocityY>1){player.velocityY=1;}
   time++;

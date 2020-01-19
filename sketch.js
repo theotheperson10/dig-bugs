@@ -74,7 +74,7 @@ if (player.velocityY>1){player.velocityY=1;}
   if (time<4){dirt.visible=false}else{dirt.visible=true}
   if (time>5){time=0
 dirt.displace(dirt)
-wall.bounce(dirt)
+wall.displace(dirt)
 screen.overlap(dirt,e)
 sucker.overlap(dirt,w)
 sucker.shapeColor="yellow"

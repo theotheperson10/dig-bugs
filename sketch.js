@@ -54,7 +54,7 @@ if (sucker.height>5){
 sucker.height--;}
 if (sucker.width>5){
 sucker.width--;}
-if (player.y>150){player.y=player.y-15}
+if (player.y>110){player.y=player.y-15}
 if (sucker.height>20){sucker.height=20;}
 if (sucker.width>20){sucker.width=20;}
 if (keyDown("DOWN_ARROW")){sucker.y=player.y+20;sucker.height=sucker.height+2;}

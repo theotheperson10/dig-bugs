@@ -75,8 +75,8 @@ screen.overlap(dirt,e)
 sucker.overlap(dirt,w)
 sucker.shapeColor="yellow"
  fill("black")
+  textSize(5)
  text("Enemies left:"+el,0,0)
- textSize(5)
 if (player.y>180){player.y=player.y-15}
 if (el<=0){window.alert("You Won");if(eee==false){}}
 }}

@@ -90,7 +90,7 @@ if (keyDown("s")){dirt.destroy();}
 if (keyDown("w")){dirt.destroy();}}
 }}
 function w(sucker,dirt){
-if (dirt.shapeColor=="red"){dirt.displace(dirt)}
+if (dirt.shapeColor=="red"){dirt.destroy();el--;}
 }
 function bye(swap,dirt){if (dirt.shapeColor=="brown"){dirt.remove();}}
 function e(screen,dirt){

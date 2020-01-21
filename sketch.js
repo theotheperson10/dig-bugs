@@ -76,7 +76,7 @@ if (player.velocityY>1){player.velocityY=1;}
 dirt.displace(dirt)
 wall.displace(dirt)
 screen.overlap(dirt,e)
-sucker.overlap(dirt,w)
+sucker.displace(dirt,w)
 sucker.shapeColor="yellow"
 if (player.y>180){player.y=player.y-15}
 if (el<=0){window.alert("You Won");if(eee==false){}}
